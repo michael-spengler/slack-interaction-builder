@@ -23,10 +23,12 @@
 ----
 >Create a Slack Message with one attachment containing two actions  
 
-    const slackInteractionBuilder: SlackInteractionBuilder = new SlackInteractionBuilder()
+    const slackInteractionBuilder: SlackInteractionBuilder = new SlackInteractionBuilder()  
     const actions: ISlackAction[] = []
     actions.push(slackInteractionBuilder.getAction("Hello Action 1"))
-    actions.push(slackInteractionBuilder.getAction("Hello Action 2"))
-    const attachments: ISlackAttachment[] = []
-    attachments.push(slackInteractionBuilder.getAttachment("Hello Attachment", actions))
-    const message: ISlackOriginalMessage = slackInteractionBuilder.getMessage("Hello World", attachments
+    actions.push(slackInteractionBuilder.getAction("Hello Action 2"))  
+    
+    const attachments: ISlackAttachment[] = []  
+    attachments.push(slackInteractionBuilder.getAttachment("Hello Attachment", actions))  
+    
+    const message: ISlackOriginalMessage = slackInteractionBuilder.getMessage("Hello World", attachments)
