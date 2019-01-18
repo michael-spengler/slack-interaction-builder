@@ -5,7 +5,8 @@ Implement Slack Interactions easily
 # Usage Example
 
     import { SlackInteractionBuilder } from "./slack-interaction-builder";  
-    import { ISlackOriginalMessage, ISlackAttachment, ISlackAction } from "./types";
+    import { ISlackOriginalMessage, ISlackAttachment, ISlackAction } 
+        from "./types";
 
     const slackInteractionBuilder: SlackInteractionBuilder = 
         new SlackInteractionBuilder()
@@ -26,7 +27,9 @@ Implement Slack Interactions easily
 >Getting a simple Slack Action  
 
     import { SlackInteractionBuilder } from "./slack-interaction-builder";  
-    import { ISlackOriginalMessage, ISlackAttachment, ISlackAction } from "./types";const action: ISlackAction = slackInteractionBuilder.getAction("Hello Action")  
+    import { ISlackOriginalMessage, ISlackAttachment, ISlackAction } from "./types";
+    
+    const action: ISlackAction = slackInteractionBuilder.getAction("Hello Action")  
 
 ----
 >Create a Slack Message with one attachment containing two actions  
